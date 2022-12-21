@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundMemory</title>
+  </head>
+  <body>
+    <div class="logo-log">
+      <div class="logo">
+        <img class="logo-img" src="img/sound-waves.png" alt="logo" />
+        <span class="logo-title">SoundMemory</span>
+      </div>
+      <div class="log">
+        <a class="register-btn" href="auth/authorization.html"
+          ><span class="log-text">Зарегистрироваться</span></a
+        >
+        <a class="login-btn" href="auth/authentication.html"><span class="log-text">Войти</span></a>
+      </div>
+    </div>
+    <div class="nav-links">
+      <nav>
+        <div class="nav-links1">
+          <a href=""
+            ><img id="fliph" class="nav-img" src="img/home.png" alt="" /><span
+              class="nav-text"
+              >Главная</span
+            ></a
+          >
+          <a href=""
+            ><img
+              id="fliph"
+              class="nav-img"
+              src="img/magnifier.png"
+              alt=""
+            /><span class="nav-text">Поиск</span></a
+          >
+          <a href=""
+            ><img
+              id="fliph"
+              class="nav-img"
+              src="img/playlist.png"
+              alt=""
+            /><span class="nav-text">Моя медиатека</span></a
+          >
+        </div>
+        <div class="nav-links2">
+          <a href=""
+            ><img id="rotate" class="nav-img" src="img/plus.png" alt="" /><span
+              class="nav-text"
+              >Создать плейлист</span
+            ></a
+          >
+          <a href=""
+            ><img id="rotate" class="nav-img" src="img/like.png" alt="" /><span
+              class="nav-text"
+              >Любимые треки</span
+            ></a
+          >
+        </div>
+      </div>
+      </nav>
+      <div class="wrapper">
+        <div class="player">
+          <div class="player-1st-block">
+            <!-- <div class="title">Сейчас играет</div> -->
+            <div class="cover">
+              <img class="cover_img" src="" alt="" />
+            </div>
+            <div class="song">plenka Call Me (Slowed)</div>
+          </div>
+          <audio
+            class="audio"
+            src="music/plenka - Call Me (Slowed).mp3"
+          ></audio>
+          <div class="player-2nd-block">
+            <div class="buttons">
+              <div class="btn prev">
+                <img id="buttons" src="img/prev-button.png" alt="btn" />
+              </div>
+              <div class="btn play">
+                <img
+                  id="buttons"
+                  class="img_src"
+                  src="img/play-button.png"
+                  alt="btn"
+                />
+              </div>
+              <div class="btn next">
+                <img id="buttons" src="img/next-button.png" alt="btn" />
+              </div>
+            </div>
+            <div class="progress_container">
+              <div class="progress"></div>
+            </div>
+          </div>
+          <div class="player-3rd-block"></div>
+        </div>
+      </div>
+    <script src="player.js"></script>
+  </body>
+</html>

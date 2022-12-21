@@ -1,0 +1,240 @@
+body {
+  background-color: black; /* цвет фона */
+  background-image: url(img/wallpaper.png); /* картинка для фона */
+  background-repeat: no-repeat; /* чтобы картинка не повторялась */
+  background-position: 17% 30%; /* позиционирование фонового изображения в процентах относительно элемента. 1-ось X, 2-ось Y */
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+}
+.logo-log {
+  background-color: rgba(85, 85, 85, 0.266);
+  position: fixed;
+  display: flex;
+  line-height: 80px;
+  width: 100%;
+  align-items: center;
+}
+.logo {
+  display: flex; 
+  align-items: center;
+}
+.log {
+  margin-left: auto;
+  margin-right: 1em;
+  display: flex;
+}
+.log-text {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+.logo-img {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+}
+.logo-title {
+  font-size: 22px;
+  margin-left: 5px;
+}
+.register-btn, .login-btn {
+  align-items: center;
+  line-height: 25px;
+  border-radius: 15px;
+  transition: 0.5s;
+  /* background-color: rgb(25, 25, 25); */
+  border: 2px rgb(255, 255, 255) solid;
+}
+.register-btn:hover, .login-btn:hover {
+  pointer-events: auto;
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.05);
+}
+nav {
+  position: static;
+  height: 100%;
+  width: 250px;
+  display: block;
+}
+.nav-links {
+  margin-top: 100px;
+  position: fixed;
+  width: max-content;
+}
+.nav-links1, .nav-links2 {
+  /* background-color: rgba(85, 85, 85, 0.266); */
+  height: 240px;
+}
+.nav-links1 {
+  margin-top: 50px;
+}
+.nav-img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.nav-text {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+a {
+  margin-left: 10px;
+  display: flex;
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+  padding: 7px 10px;
+  transition: 0.5s;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+}
+#fliph {
+  display: flex;
+  transition: margin-left 3s ease-in-out;
+}
+#fliph:hover {
+  transform: scaleX(-1);
+  filter: fliph;
+}
+#rotate{
+  display: flex;
+  transition: transform 1s;
+  transition-timing-function: linear;
+}
+#rotate:hover {
+  transform: rotate(360deg);   
+}
+
+.wrapper {
+  position: fixed;
+  background-color: rgba(85, 85, 85, 0.266);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-top: auto; */
+  bottom: 0em;
+}
+
+.player {
+  display: inherit;
+  width: 100%;
+  height: 100px;
+  /* padding: 25px; */
+  /* background: url(img/notes-musique.png); */
+  /* border-radius: 0px; */
+  /* border: 2px rgb(255, 255, 255);
+  border: solid; */
+}
+.player-1st-block {
+  display: flex;
+  width: 400px;
+}
+.cover {
+  display: flex;
+  margin: 25px 0;
+  margin-left: 1em;
+  align-items: center;
+}
+
+.cover_img {
+  width: 60px;
+  height: 60px;
+  /* transform-origin: center; */
+}
+.active {
+  animation: rotateAnimation 3s linear infinite;
+}
+
+.song {
+  margin-left: 10px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  /* font-style: normal; */
+  /* font-weight: bold; */
+  font-size: 18px;
+  /* line-height: 28px; */
+  color: rgb(255, 255, 255);
+}
+
+/* #current{
+  color: rgb(255, 255, 255);
+  display: flex;  тип контроля и таймера в блоке 
+  align-items: center;  в центр блока 
+}
+#current {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 16px;
+}
+#current {
+  text-align: right;
+} */
+.player-2nd-block {
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  /* margin-right: 350px; */
+}
+.progress_container {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /* justify-content: center; */
+  /* align-content: center; */
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: 5px;
+  width: 400px;
+  height: 7px;
+  margin-top: 10px;
+  /* align-items: center; */
+  /* text-align: center; */
+  cursor: pointer;
+}
+
+.progress{
+  background: rgb(255, 0, 0);
+  border-radius: 5px;
+  height: 100%;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.btn{
+  cursor: pointer;
+}
+
+#buttons {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.player-3rd-block {
+  width: 400px;
+}
