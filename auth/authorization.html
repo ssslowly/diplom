@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="auth.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorization</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="rere">
+      <img class="img" src="../img/user.png" alt="Не прогрузилось..." />
+      <form action="home.html" method="post">
+        <!-- Создание формы. Используется для отправки значений полей формы -->
+        <ul class="auth">
+          <!-- Регистрация -->
+          <p class="text">Ваш адрес электронной почты</p>
+          <li>
+            <!-- Почта -->
+            <input
+              class="email"
+              type="email"
+              placeholder="Адрес электронной почты"
+            />
+          </li>
+          <!-- <br /> -->
+          <p class="text">Ваш пароль</p>
+          <li>
+            <!-- Пароль -->
+            <input class="password" type="password" placeholder="Пароль" />
+          </li>
+          <!-- <br /> -->
+          <p class="text">Ваша дата рождения</p>
+          <li>
+            <input class="date" type="date" name="date" />
+          </li>
+          <li class="checkbox">
+            <input
+              class="checkbox"
+              type="checkbox"
+              checked="checked"
+              name="remember"
+            /><span class="checktext">Запомнить меня</span>
+          </li>
+          <!-- <br /> -->
+          <li>
+            <!-- Кнопка -->
+            <input class="submit" type="submit" value="Зарегистрироваться" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>

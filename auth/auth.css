@@ -1,0 +1,88 @@
+body {
+  background-color: black; /* цвет фона */
+  background-image: url(../img/wallpaper.png); /* картинка для фона */
+  background-repeat: no-repeat; /* чтобы картинка не повторялась */
+  background-position: 17% 30%; /* позиционирование фонового изображения в процентах относительно элемента. 1-ось X, 2-ось Y */
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+  
+}
+.rere {
+  border: 1px rgb(255, 255, 255) solid;
+  width: 300px;
+  margin: 0 auto;
+}
+.img {
+  margin: 0 auto 10px;
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+li input {
+  border: 2px rgb(35, 35, 35);
+  border-style: solid;
+  /* box-shadow: 0 3px rgb(255, 255, 255); */
+  border-width: 3px;
+  color: rgb(117, 117, 117);
+  padding: 5px 5px;
+  margin: 0 auto;
+  display: table;
+  justify-content: center; /* Чтобы контент сдвинуть в центр */
+  background-color: rgb(50, 50, 50);
+}
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center; /* чтобы сдвинуть в центр */
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin: 0;
+}
+ 
+.auth {
+  padding: 0; /* Изначально слева 40px */
+  list-style-type: none;
+  margin: 0; /* Изначально сверху 16px */
+}
+ 
+.email {
+  width: 160px;
+}
+.password {
+  width: 160px;
+}
+.date {
+  margin: 0 auto;
+}
+.checkbox {
+  padding: 10px 0 0 0;
+  color: black;
+  margin: 0 0 0 2.5px;
+  display: flex;
+  justify-content: center;
+}
+ 
+.checktext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  margin: 0 5px;
+}
+ 
+.submit {
+   width: 200px;
+   height: 40px;
+}
+ 
+.submit:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
